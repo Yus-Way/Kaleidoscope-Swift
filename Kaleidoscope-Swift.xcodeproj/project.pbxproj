@@ -1,0 +1,1284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AE1BBF92BAFE65A00584F30 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1BBF82BAFE65A00584F30 /* main.swift */; };
+		5AE1BC042BB1373600584F30 /* libLLVM-C.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE1BC002BB136A700584F30 /* libLLVM-C.dylib */; };
+		5AE1BC0D2BB1C6D800584F30 /* libLLVM-C.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE1BC002BB136A700584F30 /* libLLVM-C.dylib */; };
+		5AE1BC162BB1C74300584F30 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1BC152BB1C74300584F30 /* main.swift */; };
+		5AE1BC182BB30F3900584F30 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1BC172BB30F3900584F30 /* Lexer.swift */; };
+		5AE1BC1E2BB3371900584F30 /* libLLVM-C.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE1BC002BB136A700584F30 /* libLLVM-C.dylib */; };
+		5AE4D9362BBE01CD00A893B8 /* libLLVM-C.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE1BC002BB136A700584F30 /* libLLVM-C.dylib */; };
+		5AE4D9432BBE026200A893B8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D93E2BBE026200A893B8 /* Parser.swift */; };
+		5AE4D9442BBE026200A893B8 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D93F2BBE026200A893B8 /* Lexer.swift */; };
+		5AE4D9452BBE026200A893B8 /* AST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9402BBE026200A893B8 /* AST.swift */; };
+		5AE4D9462BBE026200A893B8 /* K-Codes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9412BBE026200A893B8 /* K-Codes.swift */; };
+		5AE4D9472BBE026200A893B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9422BBE026200A893B8 /* main.swift */; };
+		5AE4D9492BBE035C00A893B8 /* IRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9482BBE035C00A893B8 /* IRGenerator.swift */; };
+		5AE4D9602BC0A53600A893B8 /* libLLVM-C.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE1BC002BB136A700584F30 /* libLLVM-C.dylib */; };
+		5AE4D96E2BC0C41800A893B8 /* AST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9682BC0C41800A893B8 /* AST.swift */; };
+		5AE4D96F2BC0C41800A893B8 /* IRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9692BC0C41800A893B8 /* IRGenerator.swift */; };
+		5AE4D9702BC0C41800A893B8 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D96A2BC0C41800A893B8 /* Lexer.swift */; };
+		5AE4D9712BC0C41800A893B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D96B2BC0C41800A893B8 /* main.swift */; };
+		5AE4D9722BC0C41800A893B8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D96C2BC0C41800A893B8 /* Parser.swift */; };
+		5AE4D9732BC0C41800A893B8 /* K-Codes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D96D2BC0C41800A893B8 /* K-Codes.swift */; };
+		5AE4D97E2BC19BCC00A893B8 /* libLLVM-C.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE1BC002BB136A700584F30 /* libLLVM-C.dylib */; };
+		5AE4D98C2BC19C7C00A893B8 /* IRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9862BC19C7C00A893B8 /* IRGenerator.swift */; };
+		5AE4D98D2BC19C7C00A893B8 /* K-Codes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9872BC19C7C00A893B8 /* K-Codes.swift */; };
+		5AE4D98E2BC19C7C00A893B8 /* AST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9882BC19C7C00A893B8 /* AST.swift */; };
+		5AE4D98F2BC19C7C00A893B8 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9892BC19C7C00A893B8 /* Lexer.swift */; };
+		5AE4D9902BC19C7C00A893B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D98A2BC19C7C00A893B8 /* main.swift */; };
+		5AE4D9912BC19C7C00A893B8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D98B2BC19C7C00A893B8 /* Parser.swift */; };
+		5AE4D99B2BC1D9AA00A893B8 /* libLLVM-C.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE1BC002BB136A700584F30 /* libLLVM-C.dylib */; };
+		5AE4D9A92BC1DA0100A893B8 /* IRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9A32BC1DA0100A893B8 /* IRGenerator.swift */; };
+		5AE4D9AA2BC1DA0100A893B8 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9A42BC1DA0100A893B8 /* Lexer.swift */; };
+		5AE4D9AB2BC1DA0100A893B8 /* AST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9A52BC1DA0100A893B8 /* AST.swift */; };
+		5AE4D9AC2BC1DA0100A893B8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9A62BC1DA0100A893B8 /* Parser.swift */; };
+		5AE4D9AD2BC1DA0100A893B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9A72BC1DA0100A893B8 /* main.swift */; };
+		5AE4D9AE2BC1DA0100A893B8 /* K-Codes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9A82BC1DA0100A893B8 /* K-Codes.swift */; };
+		5AE4D9B82BC4012000A893B8 /* libLLVM-C.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE1BC002BB136A700584F30 /* libLLVM-C.dylib */; };
+		5AE4D9C62BC4019400A893B8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9C02BC4019400A893B8 /* Parser.swift */; };
+		5AE4D9C72BC4019400A893B8 /* AST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9C12BC4019400A893B8 /* AST.swift */; };
+		5AE4D9C82BC4019400A893B8 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9C22BC4019400A893B8 /* Lexer.swift */; };
+		5AE4D9C92BC4019400A893B8 /* K-Codes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9C32BC4019400A893B8 /* K-Codes.swift */; };
+		5AE4D9CA2BC4019400A893B8 /* IRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9C42BC4019400A893B8 /* IRGenerator.swift */; };
+		5AE4D9CB2BC4019400A893B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4D9C52BC4019400A893B8 /* main.swift */; };
+		5AF742432BBBE79D002AD054 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1BC262BB3378800584F30 /* Lexer.swift */; };
+		5AF742442BBBE79D002AD054 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1BC272BB3378800584F30 /* main.swift */; };
+		5AF742452BBBE79D002AD054 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1BC3D2BB917C000584F30 /* Parser.swift */; };
+		5AF742462BBBE79D002AD054 /* AST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1BC2A2BB3399A00584F30 /* AST.swift */; };
+		5AF742472BBBE79D002AD054 /* K-Codes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1BC2C2BB4BB6900584F30 /* K-Codes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5AE1BBF32BAFE65A00584F30 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5AE1BC032BB136A700584F30 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE1BC0E2BB1C6D800584F30 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5AE1BC0F2BB1C6D800584F30 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE1BC1F2BB3371900584F30 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5AE1BC202BB3371900584F30 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D9372BBE01CD00A893B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5AE4D9382BBE01CD00A893B8 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D9612BC0A53600A893B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5AE4D9622BC0A53600A893B8 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D97F2BC19BCC00A893B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5AE4D9802BC19BCC00A893B8 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D99C2BC1D9AA00A893B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5AE4D99D2BC1D9AA00A893B8 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D9B92BC4012000A893B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5AE4D9BA2BC4012000A893B8 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5AE1BBF52BAFE65A00584F30 /* Kaleidoscope-Swift-CH1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Kaleidoscope-Swift-CH1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE1BBF82BAFE65A00584F30 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5AE1BC002BB136A700584F30 /* libLLVM-C.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libLLVM-C.dylib"; path = "../../../../../../opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLLVM-C.dylib"; sourceTree = "<group>"; };
+		5AE1BC062BB1393700584F30 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		5AE1BC132BB1C6D800584F30 /* Kaleidoscope-Swift-CH0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Kaleidoscope-Swift-CH0"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE1BC152BB1C74300584F30 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5AE1BC172BB30F3900584F30 /* Lexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		5AE1BC242BB3371900584F30 /* Kaleidoscope-Swift-CH2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Kaleidoscope-Swift-CH2"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE1BC262BB3378800584F30 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		5AE1BC272BB3378800584F30 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5AE1BC2A2BB3399A00584F30 /* AST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AST.swift; sourceTree = "<group>"; };
+		5AE1BC2C2BB4BB6900584F30 /* K-Codes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "K-Codes.swift"; sourceTree = "<group>"; };
+		5AE1BC3D2BB917C000584F30 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		5AE4D93C2BBE01CD00A893B8 /* Kaleidoscope-Swift-CH3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Kaleidoscope-Swift-CH3"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE4D93E2BBE026200A893B8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		5AE4D93F2BBE026200A893B8 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		5AE4D9402BBE026200A893B8 /* AST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AST.swift; sourceTree = "<group>"; };
+		5AE4D9412BBE026200A893B8 /* K-Codes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "K-Codes.swift"; sourceTree = "<group>"; };
+		5AE4D9422BBE026200A893B8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5AE4D9482BBE035C00A893B8 /* IRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRGenerator.swift; sourceTree = "<group>"; };
+		5AE4D9662BC0A53600A893B8 /* Kaleidoscope-Swift-CH4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Kaleidoscope-Swift-CH4"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE4D9682BC0C41800A893B8 /* AST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AST.swift; sourceTree = "<group>"; };
+		5AE4D9692BC0C41800A893B8 /* IRGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRGenerator.swift; sourceTree = "<group>"; };
+		5AE4D96A2BC0C41800A893B8 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		5AE4D96B2BC0C41800A893B8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5AE4D96C2BC0C41800A893B8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		5AE4D96D2BC0C41800A893B8 /* K-Codes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "K-Codes.swift"; sourceTree = "<group>"; };
+		5AE4D9842BC19BCC00A893B8 /* Kaleidoscope-Swift-CH5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Kaleidoscope-Swift-CH5"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE4D9862BC19C7C00A893B8 /* IRGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRGenerator.swift; sourceTree = "<group>"; };
+		5AE4D9872BC19C7C00A893B8 /* K-Codes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "K-Codes.swift"; sourceTree = "<group>"; };
+		5AE4D9882BC19C7C00A893B8 /* AST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AST.swift; sourceTree = "<group>"; };
+		5AE4D9892BC19C7C00A893B8 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		5AE4D98A2BC19C7C00A893B8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5AE4D98B2BC19C7C00A893B8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		5AE4D9A12BC1D9AA00A893B8 /* Kaleidoscope-Swift-CH6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Kaleidoscope-Swift-CH6"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE4D9A32BC1DA0100A893B8 /* IRGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRGenerator.swift; sourceTree = "<group>"; };
+		5AE4D9A42BC1DA0100A893B8 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		5AE4D9A52BC1DA0100A893B8 /* AST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AST.swift; sourceTree = "<group>"; };
+		5AE4D9A62BC1DA0100A893B8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		5AE4D9A72BC1DA0100A893B8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5AE4D9A82BC1DA0100A893B8 /* K-Codes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "K-Codes.swift"; sourceTree = "<group>"; };
+		5AE4D9BE2BC4012000A893B8 /* Kaleidoscope-Swift-CH7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Kaleidoscope-Swift-CH7"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE4D9C02BC4019400A893B8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		5AE4D9C12BC4019400A893B8 /* AST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AST.swift; sourceTree = "<group>"; };
+		5AE4D9C22BC4019400A893B8 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		5AE4D9C32BC4019400A893B8 /* K-Codes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "K-Codes.swift"; sourceTree = "<group>"; };
+		5AE4D9C42BC4019400A893B8 /* IRGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRGenerator.swift; sourceTree = "<group>"; };
+		5AE4D9C52BC4019400A893B8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AE1BBF22BAFE65A00584F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE1BC042BB1373600584F30 /* libLLVM-C.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE1BC0C2BB1C6D800584F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE1BC0D2BB1C6D800584F30 /* libLLVM-C.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE1BC1D2BB3371900584F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE1BC1E2BB3371900584F30 /* libLLVM-C.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D9352BBE01CD00A893B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4D9362BBE01CD00A893B8 /* libLLVM-C.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D95F2BC0A53600A893B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4D9602BC0A53600A893B8 /* libLLVM-C.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D97D2BC19BCC00A893B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4D97E2BC19BCC00A893B8 /* libLLVM-C.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D99A2BC1D9AA00A893B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4D99B2BC1D9AA00A893B8 /* libLLVM-C.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D9B72BC4012000A893B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4D9B82BC4012000A893B8 /* libLLVM-C.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AE1BBEC2BAFE65A00584F30 = {
+			isa = PBXGroup;
+			children = (
+				5AE4D9BF2BC4013C00A893B8 /* Kaleidoscope-Swift-CH7 */,
+				5AE4D9A22BC1D9D700A893B8 /* Kaleidoscope-Swift-CH6 */,
+				5AE4D9852BC19C0300A893B8 /* Kaleidoscope-Swift-CH5 */,
+				5AE4D9672BC0C2FE00A893B8 /* Kaleidoscope-Swift-CH4 */,
+				5AE4D93D2BBE020900A893B8 /* Kaleidoscope-Swift-CH3 */,
+				5AE1BC252BB3374C00584F30 /* Kaleidoscope-Swift-CH2 */,
+				5AE1BBF72BAFE65A00584F30 /* Kaleidoscope-Swift-CH1 */,
+				5AE1BC142BB1C71200584F30 /* Kaleidoscope-Swift-CH0 */,
+				5AE1BC082BB1BE4700584F30 /* Headers */,
+				5AE1BBF62BAFE65A00584F30 /* Products */,
+				5AE1BBFF2BB136A700584F30 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5AE1BBF62BAFE65A00584F30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AE1BBF52BAFE65A00584F30 /* Kaleidoscope-Swift-CH1 */,
+				5AE1BC132BB1C6D800584F30 /* Kaleidoscope-Swift-CH0 */,
+				5AE1BC242BB3371900584F30 /* Kaleidoscope-Swift-CH2 */,
+				5AE4D93C2BBE01CD00A893B8 /* Kaleidoscope-Swift-CH3 */,
+				5AE4D9662BC0A53600A893B8 /* Kaleidoscope-Swift-CH4 */,
+				5AE4D9842BC19BCC00A893B8 /* Kaleidoscope-Swift-CH5 */,
+				5AE4D9A12BC1D9AA00A893B8 /* Kaleidoscope-Swift-CH6 */,
+				5AE4D9BE2BC4012000A893B8 /* Kaleidoscope-Swift-CH7 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AE1BBF72BAFE65A00584F30 /* Kaleidoscope-Swift-CH1 */ = {
+			isa = PBXGroup;
+			children = (
+				5AE1BBF82BAFE65A00584F30 /* main.swift */,
+				5AE1BC172BB30F3900584F30 /* Lexer.swift */,
+			);
+			path = "Kaleidoscope-Swift-CH1";
+			sourceTree = "<group>";
+		};
+		5AE1BBFF2BB136A700584F30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AE1BC002BB136A700584F30 /* libLLVM-C.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AE1BC082BB1BE4700584F30 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				5AE1BC062BB1393700584F30 /* Bridging-Header.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		5AE1BC142BB1C71200584F30 /* Kaleidoscope-Swift-CH0 */ = {
+			isa = PBXGroup;
+			children = (
+				5AE1BC152BB1C74300584F30 /* main.swift */,
+			);
+			path = "Kaleidoscope-Swift-CH0";
+			sourceTree = "<group>";
+		};
+		5AE1BC252BB3374C00584F30 /* Kaleidoscope-Swift-CH2 */ = {
+			isa = PBXGroup;
+			children = (
+				5AE1BC262BB3378800584F30 /* Lexer.swift */,
+				5AE1BC272BB3378800584F30 /* main.swift */,
+				5AE1BC3D2BB917C000584F30 /* Parser.swift */,
+				5AE1BC2A2BB3399A00584F30 /* AST.swift */,
+				5AE1BC2C2BB4BB6900584F30 /* K-Codes.swift */,
+			);
+			path = "Kaleidoscope-Swift-CH2";
+			sourceTree = "<group>";
+		};
+		5AE4D93D2BBE020900A893B8 /* Kaleidoscope-Swift-CH3 */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4D9482BBE035C00A893B8 /* IRGenerator.swift */,
+				5AE4D9402BBE026200A893B8 /* AST.swift */,
+				5AE4D93F2BBE026200A893B8 /* Lexer.swift */,
+				5AE4D9422BBE026200A893B8 /* main.swift */,
+				5AE4D93E2BBE026200A893B8 /* Parser.swift */,
+				5AE4D9412BBE026200A893B8 /* K-Codes.swift */,
+			);
+			path = "Kaleidoscope-Swift-CH3";
+			sourceTree = "<group>";
+		};
+		5AE4D9672BC0C2FE00A893B8 /* Kaleidoscope-Swift-CH4 */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4D9682BC0C41800A893B8 /* AST.swift */,
+				5AE4D9692BC0C41800A893B8 /* IRGenerator.swift */,
+				5AE4D96A2BC0C41800A893B8 /* Lexer.swift */,
+				5AE4D96B2BC0C41800A893B8 /* main.swift */,
+				5AE4D96C2BC0C41800A893B8 /* Parser.swift */,
+				5AE4D96D2BC0C41800A893B8 /* K-Codes.swift */,
+			);
+			path = "Kaleidoscope-Swift-CH4";
+			sourceTree = "<group>";
+		};
+		5AE4D9852BC19C0300A893B8 /* Kaleidoscope-Swift-CH5 */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4D9882BC19C7C00A893B8 /* AST.swift */,
+				5AE4D9862BC19C7C00A893B8 /* IRGenerator.swift */,
+				5AE4D9892BC19C7C00A893B8 /* Lexer.swift */,
+				5AE4D98A2BC19C7C00A893B8 /* main.swift */,
+				5AE4D98B2BC19C7C00A893B8 /* Parser.swift */,
+				5AE4D9872BC19C7C00A893B8 /* K-Codes.swift */,
+			);
+			path = "Kaleidoscope-Swift-CH5";
+			sourceTree = "<group>";
+		};
+		5AE4D9A22BC1D9D700A893B8 /* Kaleidoscope-Swift-CH6 */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4D9A52BC1DA0100A893B8 /* AST.swift */,
+				5AE4D9A32BC1DA0100A893B8 /* IRGenerator.swift */,
+				5AE4D9A42BC1DA0100A893B8 /* Lexer.swift */,
+				5AE4D9A72BC1DA0100A893B8 /* main.swift */,
+				5AE4D9A62BC1DA0100A893B8 /* Parser.swift */,
+				5AE4D9A82BC1DA0100A893B8 /* K-Codes.swift */,
+			);
+			path = "Kaleidoscope-Swift-CH6";
+			sourceTree = "<group>";
+		};
+		5AE4D9BF2BC4013C00A893B8 /* Kaleidoscope-Swift-CH7 */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4D9C52BC4019400A893B8 /* main.swift */,
+				5AE4D9C12BC4019400A893B8 /* AST.swift */,
+				5AE4D9C42BC4019400A893B8 /* IRGenerator.swift */,
+				5AE4D9C22BC4019400A893B8 /* Lexer.swift */,
+				5AE4D9C02BC4019400A893B8 /* Parser.swift */,
+				5AE4D9C32BC4019400A893B8 /* K-Codes.swift */,
+			);
+			path = "Kaleidoscope-Swift-CH7";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AE1BBF42BAFE65A00584F30 /* Kaleidoscope-Swift-CH1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE1BBFC2BAFE65A00584F30 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH1" */;
+			buildPhases = (
+				5AE1BBF12BAFE65A00584F30 /* Sources */,
+				5AE1BBF22BAFE65A00584F30 /* Frameworks */,
+				5AE1BBF32BAFE65A00584F30 /* CopyFiles */,
+				5AE1BC032BB136A700584F30 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kaleidoscope-Swift-CH1";
+			productName = "Kaleidoscope-Swift";
+			productReference = 5AE1BBF52BAFE65A00584F30 /* Kaleidoscope-Swift-CH1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		5AE1BC092BB1C6D800584F30 /* Kaleidoscope-Swift-CH0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE1BC102BB1C6D800584F30 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH0" */;
+			buildPhases = (
+				5AE1BC0A2BB1C6D800584F30 /* Sources */,
+				5AE1BC0C2BB1C6D800584F30 /* Frameworks */,
+				5AE1BC0E2BB1C6D800584F30 /* CopyFiles */,
+				5AE1BC0F2BB1C6D800584F30 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kaleidoscope-Swift-CH0";
+			productName = "Kaleidoscope-Swift";
+			productReference = 5AE1BC132BB1C6D800584F30 /* Kaleidoscope-Swift-CH0 */;
+			productType = "com.apple.product-type.tool";
+		};
+		5AE1BC192BB3371900584F30 /* Kaleidoscope-Swift-CH2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE1BC212BB3371900584F30 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH2" */;
+			buildPhases = (
+				5AE1BC1A2BB3371900584F30 /* Sources */,
+				5AE1BC1D2BB3371900584F30 /* Frameworks */,
+				5AE1BC1F2BB3371900584F30 /* CopyFiles */,
+				5AE1BC202BB3371900584F30 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kaleidoscope-Swift-CH2";
+			productName = "Kaleidoscope-Swift";
+			productReference = 5AE1BC242BB3371900584F30 /* Kaleidoscope-Swift-CH2 */;
+			productType = "com.apple.product-type.tool";
+		};
+		5AE4D92E2BBE01CD00A893B8 /* Kaleidoscope-Swift-CH3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE4D9392BBE01CD00A893B8 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH3" */;
+			buildPhases = (
+				5AE4D92F2BBE01CD00A893B8 /* Sources */,
+				5AE4D9352BBE01CD00A893B8 /* Frameworks */,
+				5AE4D9372BBE01CD00A893B8 /* CopyFiles */,
+				5AE4D9382BBE01CD00A893B8 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kaleidoscope-Swift-CH3";
+			productName = "Kaleidoscope-Swift";
+			productReference = 5AE4D93C2BBE01CD00A893B8 /* Kaleidoscope-Swift-CH3 */;
+			productType = "com.apple.product-type.tool";
+		};
+		5AE4D9572BC0A53600A893B8 /* Kaleidoscope-Swift-CH4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE4D9632BC0A53600A893B8 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH4" */;
+			buildPhases = (
+				5AE4D9582BC0A53600A893B8 /* Sources */,
+				5AE4D95F2BC0A53600A893B8 /* Frameworks */,
+				5AE4D9612BC0A53600A893B8 /* CopyFiles */,
+				5AE4D9622BC0A53600A893B8 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kaleidoscope-Swift-CH4";
+			productName = "Kaleidoscope-Swift";
+			productReference = 5AE4D9662BC0A53600A893B8 /* Kaleidoscope-Swift-CH4 */;
+			productType = "com.apple.product-type.tool";
+		};
+		5AE4D9752BC19BCC00A893B8 /* Kaleidoscope-Swift-CH5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE4D9812BC19BCC00A893B8 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH5" */;
+			buildPhases = (
+				5AE4D9762BC19BCC00A893B8 /* Sources */,
+				5AE4D97D2BC19BCC00A893B8 /* Frameworks */,
+				5AE4D97F2BC19BCC00A893B8 /* CopyFiles */,
+				5AE4D9802BC19BCC00A893B8 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kaleidoscope-Swift-CH5";
+			productName = "Kaleidoscope-Swift";
+			productReference = 5AE4D9842BC19BCC00A893B8 /* Kaleidoscope-Swift-CH5 */;
+			productType = "com.apple.product-type.tool";
+		};
+		5AE4D9922BC1D9AA00A893B8 /* Kaleidoscope-Swift-CH6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE4D99E2BC1D9AA00A893B8 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH6" */;
+			buildPhases = (
+				5AE4D9932BC1D9AA00A893B8 /* Sources */,
+				5AE4D99A2BC1D9AA00A893B8 /* Frameworks */,
+				5AE4D99C2BC1D9AA00A893B8 /* CopyFiles */,
+				5AE4D99D2BC1D9AA00A893B8 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kaleidoscope-Swift-CH6";
+			productName = "Kaleidoscope-Swift";
+			productReference = 5AE4D9A12BC1D9AA00A893B8 /* Kaleidoscope-Swift-CH6 */;
+			productType = "com.apple.product-type.tool";
+		};
+		5AE4D9AF2BC4012000A893B8 /* Kaleidoscope-Swift-CH7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE4D9BB2BC4012000A893B8 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH7" */;
+			buildPhases = (
+				5AE4D9B02BC4012000A893B8 /* Sources */,
+				5AE4D9B72BC4012000A893B8 /* Frameworks */,
+				5AE4D9B92BC4012000A893B8 /* CopyFiles */,
+				5AE4D9BA2BC4012000A893B8 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kaleidoscope-Swift-CH7";
+			productName = "Kaleidoscope-Swift";
+			productReference = 5AE4D9BE2BC4012000A893B8 /* Kaleidoscope-Swift-CH7 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AE1BBED2BAFE65A00584F30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					5AE1BBF42BAFE65A00584F30 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 5AE1BBF02BAFE65A00584F30 /* Build configuration list for PBXProject "Kaleidoscope-Swift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AE1BBEC2BAFE65A00584F30;
+			productRefGroup = 5AE1BBF62BAFE65A00584F30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AE4D9AF2BC4012000A893B8 /* Kaleidoscope-Swift-CH7 */,
+				5AE4D9922BC1D9AA00A893B8 /* Kaleidoscope-Swift-CH6 */,
+				5AE4D9752BC19BCC00A893B8 /* Kaleidoscope-Swift-CH5 */,
+				5AE4D9572BC0A53600A893B8 /* Kaleidoscope-Swift-CH4 */,
+				5AE4D92E2BBE01CD00A893B8 /* Kaleidoscope-Swift-CH3 */,
+				5AE1BC192BB3371900584F30 /* Kaleidoscope-Swift-CH2 */,
+				5AE1BBF42BAFE65A00584F30 /* Kaleidoscope-Swift-CH1 */,
+				5AE1BC092BB1C6D800584F30 /* Kaleidoscope-Swift-CH0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AE1BBF12BAFE65A00584F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE1BC182BB30F3900584F30 /* Lexer.swift in Sources */,
+				5AE1BBF92BAFE65A00584F30 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE1BC0A2BB1C6D800584F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE1BC162BB1C74300584F30 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE1BC1A2BB3371900584F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF742472BBBE79D002AD054 /* K-Codes.swift in Sources */,
+				5AF742452BBBE79D002AD054 /* Parser.swift in Sources */,
+				5AF742432BBBE79D002AD054 /* Lexer.swift in Sources */,
+				5AF742462BBBE79D002AD054 /* AST.swift in Sources */,
+				5AF742442BBBE79D002AD054 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D92F2BBE01CD00A893B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4D9452BBE026200A893B8 /* AST.swift in Sources */,
+				5AE4D9472BBE026200A893B8 /* main.swift in Sources */,
+				5AE4D9492BBE035C00A893B8 /* IRGenerator.swift in Sources */,
+				5AE4D9442BBE026200A893B8 /* Lexer.swift in Sources */,
+				5AE4D9462BBE026200A893B8 /* K-Codes.swift in Sources */,
+				5AE4D9432BBE026200A893B8 /* Parser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D9582BC0A53600A893B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4D9732BC0C41800A893B8 /* K-Codes.swift in Sources */,
+				5AE4D96F2BC0C41800A893B8 /* IRGenerator.swift in Sources */,
+				5AE4D9702BC0C41800A893B8 /* Lexer.swift in Sources */,
+				5AE4D9722BC0C41800A893B8 /* Parser.swift in Sources */,
+				5AE4D9712BC0C41800A893B8 /* main.swift in Sources */,
+				5AE4D96E2BC0C41800A893B8 /* AST.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D9762BC19BCC00A893B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4D98E2BC19C7C00A893B8 /* AST.swift in Sources */,
+				5AE4D9902BC19C7C00A893B8 /* main.swift in Sources */,
+				5AE4D9912BC19C7C00A893B8 /* Parser.swift in Sources */,
+				5AE4D98D2BC19C7C00A893B8 /* K-Codes.swift in Sources */,
+				5AE4D98F2BC19C7C00A893B8 /* Lexer.swift in Sources */,
+				5AE4D98C2BC19C7C00A893B8 /* IRGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D9932BC1D9AA00A893B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4D9AE2BC1DA0100A893B8 /* K-Codes.swift in Sources */,
+				5AE4D9AC2BC1DA0100A893B8 /* Parser.swift in Sources */,
+				5AE4D9AD2BC1DA0100A893B8 /* main.swift in Sources */,
+				5AE4D9AB2BC1DA0100A893B8 /* AST.swift in Sources */,
+				5AE4D9AA2BC1DA0100A893B8 /* Lexer.swift in Sources */,
+				5AE4D9A92BC1DA0100A893B8 /* IRGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4D9B02BC4012000A893B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4D9C72BC4019400A893B8 /* AST.swift in Sources */,
+				5AE4D9C82BC4019400A893B8 /* Lexer.swift in Sources */,
+				5AE4D9CB2BC4019400A893B8 /* main.swift in Sources */,
+				5AE4D9CA2BC4019400A893B8 /* IRGenerator.swift in Sources */,
+				5AE4D9C92BC4019400A893B8 /* K-Codes.swift in Sources */,
+				5AE4D9C62BC4019400A893B8 /* Parser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5AE1BBFA2BAFE65A00584F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AE1BBFB2BAFE65A00584F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5AE1BBFD2BAFE65A00584F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AE1BBFE2BAFE65A00584F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AE1BC112BB1C6D800584F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AE1BC122BB1C6D800584F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AE1BC222BB3371900584F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AE1BC232BB3371900584F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AE4D93A2BBE01CD00A893B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AE4D93B2BBE01CD00A893B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AE4D9642BC0A53600A893B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AE4D9652BC0A53600A893B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AE4D9822BC19BCC00A893B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AE4D9832BC19BCC00A893B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AE4D99F2BC1D9AA00A893B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AE4D9A02BC1D9AA00A893B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AE4D9BC2BC4012000A893B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AE4D9BD2BC4012000A893B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Kaleidoscope-Swift-CH1/Kaleidoscope-Swift-CH1.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8VPE977C;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/llvm/17.0.6_1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/llvm/17.0.6_1/lib,
+				);
+				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Headers/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AE1BBF02BAFE65A00584F30 /* Build configuration list for PBXProject "Kaleidoscope-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE1BBFA2BAFE65A00584F30 /* Debug */,
+				5AE1BBFB2BAFE65A00584F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE1BBFC2BAFE65A00584F30 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE1BBFD2BAFE65A00584F30 /* Debug */,
+				5AE1BBFE2BAFE65A00584F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE1BC102BB1C6D800584F30 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE1BC112BB1C6D800584F30 /* Debug */,
+				5AE1BC122BB1C6D800584F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE1BC212BB3371900584F30 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE1BC222BB3371900584F30 /* Debug */,
+				5AE1BC232BB3371900584F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE4D9392BBE01CD00A893B8 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4D93A2BBE01CD00A893B8 /* Debug */,
+				5AE4D93B2BBE01CD00A893B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE4D9632BC0A53600A893B8 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4D9642BC0A53600A893B8 /* Debug */,
+				5AE4D9652BC0A53600A893B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE4D9812BC19BCC00A893B8 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4D9822BC19BCC00A893B8 /* Debug */,
+				5AE4D9832BC19BCC00A893B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE4D99E2BC1D9AA00A893B8 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4D99F2BC1D9AA00A893B8 /* Debug */,
+				5AE4D9A02BC1D9AA00A893B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE4D9BB2BC4012000A893B8 /* Build configuration list for PBXNativeTarget "Kaleidoscope-Swift-CH7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4D9BC2BC4012000A893B8 /* Debug */,
+				5AE4D9BD2BC4012000A893B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AE1BBED2BAFE65A00584F30 /* Project object */;
+}
